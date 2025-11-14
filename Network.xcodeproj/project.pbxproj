@@ -6,9 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E18F3B332EC7F4470058BE31 /* Module in Frameworks */ = {isa = PBXBuildFile; productRef = E18F3B322EC7F4470058BE31 /* Module */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E17309092EBEAD7D00B7E782 /* Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E173091E2EBEAE9400B7E782 /* APILayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APILayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18F3B302EC7F30D0058BE31 /* Module */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Module; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18F3B332EC7F4470058BE31 /* Module in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +51,10 @@
 		E17309002EBEAD7D00B7E782 = {
 			isa = PBXGroup;
 			children = (
+				E18F3B302EC7F30D0058BE31 /* Module */,
 				E173090B2EBEAD7D00B7E782 /* Network */,
 				E173091F2EBEAE9400B7E782 /* APILayer */,
+				E18F3B312EC7F4470058BE31 /* Frameworks */,
 				E173090A2EBEAD7D00B7E782 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +66,13 @@
 				E173091E2EBEAE9400B7E782 /* APILayer.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E18F3B312EC7F4470058BE31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +117,7 @@
 			);
 			name = APILayer;
 			packageProductDependencies = (
+				E18F3B322EC7F4470058BE31 /* Module */,
 			);
 			productName = APILayer;
 			productReference = E173091E2EBEAE9400B7E782 /* APILayer.app */;
@@ -460,6 +476,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E18F3B322EC7F4470058BE31 /* Module */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Module;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E17309012EBEAD7D00B7E782 /* Project object */;
 }

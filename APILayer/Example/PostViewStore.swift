@@ -1,12 +1,12 @@
 //
-//  PostViewModel.swift
+//  PostViewStore.swift
 //  Network
 //
 //  Created by YOO on 2025/11/08.
 //
 
 import Foundation
-import Combine
+import Observation
 
 struct Post: Codable, Identifiable, Hashable {
     let id: Int
@@ -23,11 +23,11 @@ enum PostViewState: Equatable {
     case failed(String)
 }
 
-@MainActor
-final class PostViewModel: ObservableObject {
-    @Published private(set) var posts: [Post]
-    @Published private(set) var state: PostViewState
-    @Published var selectedId: Int?
+@MainActor @Observable
+final class PostViewStore {
+    private(set) var posts: [Post]
+    private(set) var state: PostViewState
+    var selectedId: Int?
     
     init(posts: [Post] = [], state: PostViewState = .none) {
         self.posts = posts

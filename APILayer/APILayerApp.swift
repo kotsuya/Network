@@ -12,7 +12,7 @@ struct APILayerApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                PostView(PostViewModel())
+                PostView(PostViewStore())
             }
         }
     }
